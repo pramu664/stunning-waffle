@@ -18,6 +18,7 @@ First we'll need to create a html page.
     </body>
 </html>
 ```
+
     First we tell our browser that we are using the latest versing html in our page by adding doctype declaration. Next we define the html tag and use lang attribute to describe the language we are using inside our webpage. Then we add the meta tags, first meta tag we specifiying the character that we can use with our webpage. By giving the value as UTF-8 we cover all of the characters and symbols around the world.
     Then next we add a title for our webpage. After that we add a link tag. Inside link we spcifiying the relation between the rel and href as stylesheet and specifying the href attribute value as styles.css. 
     Next we adding another link for a stylesheet. But this is external style that we can used to create icons. we are using this library for generating social media accounts icons.
