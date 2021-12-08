@@ -11,7 +11,7 @@ cd imageSlider
 touch index.html styles.css script.js
 mkdir images
 ```
-    You can download images from [[pexels]](https://www.pexels.com/).
+You can download images from [[pexels]](https://www.pexels.com/).
 
 
 ## Initial HTML setup
@@ -32,13 +32,13 @@ Before getting start first thing we want to do is that we want to setup the init
     </body>
 </html>
 ```
-    First we set up the doctype to tell the browser that we are writing HTML document.
-    Next In the head section we add two meta tags. using charset="UTF-8" we tell the browser to use UTF-8 for charactor encoding.(coverting your characters to machine readable code)
-    Viewport is the size of the visiable area on the screen. Using viewport on meta element we tell browser that how to scale the content inside the viewport in different devices. Desktops, mobile phones and tablets have different viewports and the viewport tag is going to display the content correctly on those different divices.
-    Next we give a title for our webpage called Responsive Image Slider.
-    Next we add a link to our styles.css file using link attribute.
-    Next we add a link to the font-awesome library. we using this library to get icons for our project.
-    Finally we add the body tag and inside the body tag we add our script tag. we use src attribute to divide our scripts to another file.
+First we set up the doctype to tell the browser that we are writing HTML document.
+In the head section we add two meta tags. using charset="UTF-8" we tell the browser to use UTF-8 for charactor encoding.(coverting your characters to machine readable code)
+Viewport is the size of the visiable area on the screen. Using viewport on meta element we tell browser that how to scale the content inside the viewport in different devices. Desktops, mobile phones and tablets have different viewports and the viewport tag is going to display the content correctly on those different divices.
+Next we give a title for our webpage called Responsive Image Slider.
+Next we add a link to our styles.css file using link attribute.
+Next we add a link to the font-awesome library. we using this library to get icons for our project.
+Finally we add the body tag and inside the body tag we add our script tag. we use src attribute to divide our scripts to another file.
 
 ## DEFINING THE STRUCTURE OF THE PAGE
 Now we'll need to add necessary components to our application. They are divs for grouping, h1 for headeing, p, buttons and text. 
@@ -91,11 +91,11 @@ Now we'll need to add necessary components to our application. They are divs for
     <button id="next"><i class="fas fa-arrow-right"></i></button>
 </div>
 ```
-    We create a header. and we add dummy text inside p elements. and then group those two elements inside div element that have a class called content.
-    Next we group that element(content) inside another div element that have a class called slider. After that we copy each that div element(slide) five times. Next we add new class called current to the first div element(slide).
-    Finally we group all those div elements(slide) inside another div element that have a class called(slider)
-    Now we have a slider. Inside the slider we have five slides. Each of the slides we have content. Each of content we have heading and a paragraph.
-    Finally we use icon tag to add arrow-left icon and arrow-right icont. we specify the classes for that. Then we markup each of icons using buttons element that have an unique ids. And finally we group those buttons inside a div that have a class called buttons.
+We create a header. and we add dummy text inside p elements. and then group those two elements inside div element that have a class called content.
+Next we group that element(content) inside another div element that have a class called slider. After that we copy each that div element(slide) five times. Next we add new class called current to the first div element(slide).
+Finally we group all those div elements(slide) inside another div element that have a class called(slider)
+Now we have a slider. Inside the slider we have five slides. Each of the slides we have content. Each of content we have heading and a paragraph.
+Finally we use icon tag to add arrow-left icon and arrow-right icont. we specify the classes for that. Then we markup each of icons using buttons element that have an unique ids. And finally we group those buttons inside a div that have a class called buttons.
 
 ## ADDING INITIAL STYLE
 To get start with styling first we need to get a [[font]](fonts.google.com). Then we need to set up the sizing of the elements and also some other changes like background-color and color.
@@ -115,8 +115,8 @@ body {
     line-height: 1.6;
 }
 ```
-    First we get a font from the google fonts. Next we select all the elements and set up the box-sizing property value to border-box. Now padding and margin also include when we setting width and height for the elements. Next we set up all the elements margin and padding to zero.
-    Now we know all the elements doesn't have margin and padding. Body background is dark grey, text color is white.
+First we get a font from the google fonts. Next we select all the elements and set up the box-sizing property value to border-box. Now padding and margin also include when we setting width and height for the elements. Next we set up all the elements margin and padding to zero.
+Now we know all the elements doesn't have margin and padding. Body background is dark grey, text color is white.
 
 ## STYLING THE SLIDER
 Now we'll need to style the next big element. It is the element that wrap around the slides called slider.
@@ -128,7 +128,7 @@ Now we'll need to style the next big element. It is the element that wrap around
     width: 100vw;
 }
 ```
-    If we want to position the slides absolutely we need to make our slider to positioned relative. We set up the overflow to hidden because we don't want to spill out the content out from the slider. Next we set up the height and width to 100vh and 100vw. By doing this slider is going to get the entire width and height of our viewport.
+If we want to position the slides absolutely we need to make our slider to positioned relative. We set up the overflow to hidden because we don't want to spill out the content out from the slider. Next we set up the height and width to 100vh and 100vw. By doing this slider is going to get the entire width and height of our viewport.
 
 ## STYLING INDIVIDUAL SLIDES & THINKING AHEAD FUNCTIONALITY
 Each slides need to take full width and height of the container. That's the styling we want to do first. 
@@ -146,8 +146,8 @@ Each slides need to take full width and height of the container. That's the styl
     opacity: 1;
 }
 ```
-    We set the position to absolute because we want to take each slide full width and height of the container. Then we position the slide top left corner of the slider. and next we span the slides width to 100% of the container and we span the slides height to 100% of the slider height.
-    Next we set the every slides opacity to 0. It causes to invisiable the all the slide elements. But we set up the slide that have a class called current to opacity to 1. Because we want to show only one slide at a time.
+We set the position to absolute because we want to take each slide full width and height of the container. Then we position the slide top left corner of the slider. and next we span the slides width to 100% of the container and we span the slides height to 100% of the slider height.
+Next we set the every slides opacity to 0. It causes to invisiable the all the slide elements. But we set up the slide that have a class called current to opacity to 1. Because we want to show only one slide at a time.
 
 ## ADDING BACKGROUND IMAGES
 In our html we have p and h1 wrap around the text. those p and h1 is wrap around a div called content. Each content wrap around with a element called slide. Previously we make that slide to take the full height and width of the containing element. Now the question is where we should add the background image? we'll adding the background image inside  the content(Div that wrap around paragraph and heading).
@@ -176,12 +176,12 @@ We can use :nth() css selector for selecting individual items that doesn't have 
 } 
 
 ```
-    First we select the content of the first container that have a class called slide. then add a background.
-    Next we select the content of the second container that have a class called slide. then add a background.
-    Next we select the content of the third slide and add a background.
-    Next we select the content of the fourth slide and add a backgroud.
-    Finally we select the content element of the fifth slide and add a background.
-    Previously we set the the opacity to 1 If there is only have a class called current. we know that the first slide have that class. every other slide content are invisiable because we set the opacity value to zero. If we want to display the second slide we only need to add the new class called current to the second slide. same goes for every one of them.
+First we select the content of the first container that have a class called slide. then add a background.
+Next we select the content of the second container that have a class called slide. then add a background.
+Next we select the content of the third slide and add a background.
+Next we select the content of the fourth slide and add a backgroud.
+Finally we select the content element of the fifth slide and add a background.
+Previously we set the the opacity to 1 If there is only have a class called current. we know that the first slide have that class. every other slide content are invisiable because we set the opacity value to zero. If we want to display the second slide we only need to add the new class called current to the second slide. same goes for every one of them.
 
 ## STYLING THE CONTENT
 In content we have heading and paragraphs. Each content divs are wrap around with a the slide. each slide wrap around with slider. we make slider to relative. so we can position content absolutely inside the slide div.
@@ -199,9 +199,9 @@ In content we have heading and paragraphs. Each content divs are wrap around wit
     margin-bottom: 10px;
 }
 ```
-    We set the position of the content div to be absolutely with in the slide container. And we positioned that bottom left corner. we specify a width, background color and padding to the content div. we set the font color to dark gray of the text insie the content div.
-    Finally select the h1 element inside the content div and set up the margin-bottom property to 10px.
-    One thing we want to do is that initialy we want to hide the content and slide from the left side to the screen. we can hide the element by setting the left off set a negative value.
+We set the position of the content div to be absolutely with in the slide container. And we positioned that bottom left corner. we specify a width, background color and padding to the content div. we set the font color to dark gray of the text insie the content div.
+Finally select the h1 element inside the content div and set up the margin-bottom property to 10px.
+One thing we want to do is that initialy we want to hide the content and slide from the left side to the screen. we can hide the element by setting the left off set a negative value.
 
 ## ANIMATING THE CONTENT DIV
 Animation needs to be happen once the current class is selected. content div needs to be slide from the left side corner to the screen.
@@ -217,10 +217,10 @@ Animation needs to be happen once the current class is selected. content div nee
     transition: all 0.7s ease-in-out 0.3s;
 }
 ```
-    First we select the content div inside the slide div. After that we set up the left off set value to -600px. This causes to move to the left side of the screen. and change the opacity to 0.
-    Next we select the current slide's content and change the opacity to 1.
-    Next we set up a transfrom. Tranformation is translate to x axis 600px. 
-    Next we set up a transition to all the elements inside the content. time to be 0.7s and it needs to be ease-in-out and have a slight delay of 0.3s.
+First we select the content div inside the slide div. After that we set up the left off set value to -600px. This causes to move to the left side of the screen. and change the opacity to 0.
+Next we select the current slide's content and change the opacity to 1.
+Next we set up a transfrom. Tranformation is translate to x axis 600px. 
+Next we set up a transition to all the elements inside the content. time to be 0.7s and it needs to be ease-in-out and have a slight delay of 0.3s.
 
 ## POSITININING THE BUTTONS
 We'll need to position the left button on left side horizontally and center vertically. And the right button on right side horizontally and center vertically. We can make the button position absolutely because we make the slider container to be positiend relatively.
@@ -236,7 +236,7 @@ We'll need to position the left button on left side horizontally and center vert
     right: 15px;
 }
 ```
-    We select the button that have a id called #prev. so we positiond the previous button middle in left corner of the screen by setting the top property value to 50% and left property value to 15px. and we done same thing to the next button. we only change the left offeset property to right offset.
+We select the button that have a id called #prev. so we positiond the previous button middle in left corner of the screen by setting the top property value to 50% and left property value to 15px. and we done same thing to the next button. we only change the left offeset property to right offset.
 
 ## STYLING THE BUTTONS
 Let's do the styling:
@@ -255,10 +255,10 @@ Let's do the styling:
     color: #333;
 }
 ```
-    First we select the two buttons inside the buttons div. Next we make the button round by setting the border-radius to 50%. Next we get rid of the square outline by setting the outline propery to none.
-    Next we set up our own border by setting border property to 2px solid #fff. Next we make our button bigger by setting padding property values. Next we change the background color to transparent by setting the background-color property to transparent. And we set the color to #fff.
-    We want to change to the mouse pointer when hover over the button. so we set the cursor to pointer.
-    Next we select the buttons on hover state by using pesudo selectors and change the background color to white and text color to dark grey.
+First we select the two buttons inside the buttons div. Next we make the button round by setting the border-radius to 50%. Next we get rid of the square outline by setting the outline propery to none.
+Next we set up our own border by setting border property to 2px solid #fff. Next we make our button bigger by setting padding property values. Next we change the background color to transparent by setting the background-color property to transparent. And we set the color to #fff.
+We want to change to the mouse pointer when hover over the button. so we set the cursor to pointer.
+Next we select the buttons on hover state by using pesudo selectors and change the background color to white and text color to dark grey.
 
 ## GETTING START WITH ADDING JAVASCRIPT
 Now we need to get start with getting the elements we want from the document.
