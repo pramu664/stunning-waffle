@@ -21,7 +21,7 @@ First let's create the initial html page for our application. This section our i
     </body>
 </html>
 ```
-    First we say to browser that we are using the latest version of HTML by adding the doctype tag. Next we add the html tag and also we add an attribute call lang and give that attirbute value to *en*. By doing this we say browser to we are using English as the language of our application.
+First we say to browser that we are using the latest version of HTML by adding the doctype tag. Next we add the html tag and also we add an attribute call lang and give that attirbute value to *en*. By doing this we say browser to we are using English as the language of our application.
 After that we set up the head section with two meta tags, title and two link tags. First meta tag we tell browser to use the *UTF-8* character encoding to convert the characters of html page to machine readable code.
 And next meta tag we define the viewport. first we say that content width needs to be use the screen width. and then we give that initial zoom for just 1.5.
 Next we link to our styles and third party styles by using link tags. we use font-awesome for create icons for our application.
@@ -89,8 +89,8 @@ pdfjsLib.getDocment(url).promise.then(pdfDoc_ => {
     renderPage(pageNum);
 });
 ```
-    We select the span element that needs to store the total number pages by using querySelector method. then we change that element's textContent to the total number of pages by using pdfDoc.numPages variable value.
-    Finally once we get the document we want to render the page to the viewport. to do that we want to define a new function called renderPage. we haven't define that yet, we can do that in next section.
+We select the span element that needs to store the total number pages by using querySelector method. then we change that element's textContent to the total number of pages by using pdfDoc.numPages variable value.
+Finally once we get the document we want to render the page to the viewport. to do that we want to define a new function called renderPage. we haven't define that yet, we can do that in next section.
 
 ### RENDERING THE FIRST PAGE
 In this section we'll going to create a function to render pages to the browser window. 
@@ -122,19 +122,12 @@ const renderPage = num => {
 }
 ```
 We define a arrow function call renderPage. We give the page number as argument to the function. Inside the function we set up the pageIsRendering variable value to true to indicate that still page is rendering. 
-
 Next we call the `getPage()` method and pass the number as argument. this function give us a promise we get that promise object and we call it as page and pass that in to anonymous function.
-
 Inside the anonymous function we get a viewport object that have a height and width values. To get those we need to pass a scale as an object. After getting the viewport object. we set up height and width of our canvas using the values of viewport object. 
-
 After that we setup a object called renderCtx has a property called canvasContext.
-
 Next we call the render method on page object and pass the renderCtx object. when we do that it give a promise, once the promise give we call an anonymous function.
-
 Inside that function the we set up the pageIsRenderning variable value to false. 
-
 Next we set up a condition that If the pageNumPending not equal to null we render that page and set up the pageNumIsPending to null.
-
 Finally we set up the current number on the page selecting the span element that have a id called page-num and chaning the text content to number.
 
 ## ADDING TABLE OF CONTENT
