@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    position: fixed;
+    width: 100vw;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.btn {
+    background-color: #32a852;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.page-info {
+    margin-left: 1rem;
+}
+
+body {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 25rem;
+    height: 100vh;
+    z-index: 2;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+}
+
+canvas {
+    margin-left: 25rem;
+}
+
+.error {
+    background-color: orange;
+    padding: 1.5rem;
+    width: 100vw;
+}
