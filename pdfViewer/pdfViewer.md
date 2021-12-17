@@ -94,7 +94,7 @@ Finally once we get the document we want to render the page to the viewport. to 
 
 ### RENDERING THE FIRST PAGE
 In this section we'll going to create a function to render pages to the browser window. 
-``JavaScript
+```JavaScript
 const renderPage = num => {
     pageRenderning = true;
 
