@@ -232,9 +232,9 @@ Now we need to style the buttons and the span elements and text inside those but
     margin-left: 1rem;
 }
 ```
-    We select the two buttons using the class selector, then we set up each of those buttons background color to use coral background. the we change the font color to white. then we remove the border styling by setting up the border to none. and we remove the outline around the buttons by setting the outline propery value to none. Next we set the cursor to pointer. Next we give padding in between the text and the border. we give 0.7rem padding to top and bottom and 2rem padding to left and right.
-    Next when our buttons are in hover state we change there opacity to 90 present.
-    Finally we give margin to left side in between the next button and the div tag that has a class called page-infor.
+We select the two buttons using the class selector, then we set up each of those buttons background color to use coral background. the we change the font color to white. then we remove the border styling by setting up the border to none. and we remove the outline around the buttons by setting the outline propery value to none. Next we set the cursor to pointer. Next we give padding in between the text and the border. we give 0.7rem padding to top and bottom and 2rem padding to left and right.
+Next when our buttons are in hover state we change there opacity to 90 present.
+Finally we give margin to left side in between the next button and the div tag that has a class called page-infor.
 
 ## STYLE FOR ERROR
 Finally we'll need some style for if the book is not loaded for the page.
@@ -257,9 +257,9 @@ When there is no any document to show we can catch an error and handle those err
     document.querySelector('.menu').style.display = 'none';
 });
 ```
-    We set up catch function right below the getDocument, First we create a div element. we use createElement method for that. then we give that element a className call error. then we add a text that using the error message text. we use createTextNode method for that. It take the argument some text, so provide the error message as text.
-    Next we select the body and insert our div before the canvas element. we use insertBefore method. we give first argument the div we want to insert and second argument the canvas element.
-    Finally we select the div container that have a class called top-bar and make the display hidden. we change the style object's display value to none to hide the top bar.
+We set up catch function right below the getDocument, First we create a div element. we use createElement method for that. then we give that element a className call error. then we add a text that using the error message text. we use createTextNode method for that. It take the argument some text, so provide the error message as text.
+Next we select the body and insert our div before the canvas element. we use insertBefore method. we give first argument the div we want to insert and second argument the canvas element.
+Finally we select the div container that have a class called top-bar and make the display hidden. we change the style object's display value to none to hide the top bar.
     
 ## PUTTING ALL TOGETHER
 Now let's get all the building blocks and put them all together.
