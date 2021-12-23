@@ -1,0 +1,38 @@
+JavaScript BookList App | No Frameworks - YouTube
+https://www.youtube.com/watch?v=JaMCxVWtW58&list=WL&index=5
+
+JavaScript BookList App
+https://codepen.io/bradtraversy/pen/OrmKWZ
+
+Bootswatch: Free themes for Bootstrap
+https://bootswatch.com/
+
+bootswatch - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers
+https://cdnjs.com/libraries/bootswatch
+
+BookList
+file:///C:/Users/Pramu/Desktop/code/bookList/index.html
+
+Responsive Web Design Viewport
+https://www.w3schools.com/css/css_rwd_viewport.asp
+
+Array.prototype.splice() - JavaScript | MDN
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+Icons | Font Awesome v6 Beta
+https://fontawesome.com/v6.0/icons/pen-line?s=solid
+
+Bootstrap 4 Textarea - examples & tutorial. Basic & advanced usage - Material Design for Bootstrap
+https://mdbootstrap.com/docs/b4/jquery/forms/textarea/
+
+Sizing · Bootstrap
+https://getbootstrap.com/docs/4.4/utilities/sizing/
+
+Free Icons | Font Awesome
+https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
+
+Learn How to Get Current Date & Time in JavaScript
+https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
+
+✓ - Check Mark: U+2713 check - Unicode Character Table
+https://unicode-table.com/en/2713/
