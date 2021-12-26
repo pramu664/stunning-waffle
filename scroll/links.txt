@@ -1,0 +1,10 @@
+Youtube video
+https://www.youtube.com/watch?v=y9nlfqT4s9s&t=736s
+
+Images
+https://unsplash.com/
+
+
+MDN
+https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type
+
